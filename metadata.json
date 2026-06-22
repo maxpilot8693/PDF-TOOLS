@@ -1,0 +1,6 @@
+{
+  "name": "PDF Tools Platform",
+  "description": "A comprehensive suite of PDF tools including merge, split, compress, and convert functionalities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
