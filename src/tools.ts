@@ -9,7 +9,8 @@ export const TOOLS: ToolContext[] = [
     icon: Combine,
     accept: { 'application/pdf': ['.pdf'] },
     multiple: true,
-    actionText: 'Merge Files'
+    actionText: 'Merge Files',
+    path: '/merge-pdf'
   },
   {
     id: 'split',
@@ -18,7 +19,8 @@ export const TOOLS: ToolContext[] = [
     icon: Scissors,
     accept: { 'application/pdf': ['.pdf'] },
     multiple: false,
-    actionText: 'Split PDF'
+    actionText: 'Split PDF',
+    path: '/split-pdf'
   },
   {
     id: 'compress',
@@ -27,7 +29,8 @@ export const TOOLS: ToolContext[] = [
     icon: Minimize2,
     accept: { 'application/pdf': ['.pdf'] },
     multiple: false,
-    actionText: 'Compress PDF'
+    actionText: 'Compress PDF',
+    path: '/compress-pdf'
   },
   {
     id: 'pdf-to-word',
@@ -36,7 +39,8 @@ export const TOOLS: ToolContext[] = [
     icon: FileStack,
     accept: { 'application/pdf': ['.pdf'] },
     multiple: false,
-    actionText: 'Convert to Word'
+    actionText: 'Convert to Word',
+    path: '/pdf-to-word'
   },
   {
     id: 'word-to-pdf',
@@ -45,6 +49,7 @@ export const TOOLS: ToolContext[] = [
     icon: FileText,
     accept: { 'application/msword': ['.doc', '.docx'], 'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['.docx'] },
     multiple: false,
-    actionText: 'Convert to PDF'
+    actionText: 'Convert to PDF',
+    path: '/word-to-pdf'
   }
 ];

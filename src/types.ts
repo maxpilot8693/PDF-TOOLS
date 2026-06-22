@@ -8,4 +8,5 @@ export interface ToolContext {
   accept: Record<string, string[]>;
   multiple: boolean;
   actionText: string;
+  path: string;
 }
