@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import { Seo } from '@/src/components/Seo';
 import { Layout } from '@/src/components/Layout';
-import { AdPlaceholder } from '@/src/components/AdPlaceholder';
 import { FileUploader } from '@/src/components/FileUploader';
 import { Link } from 'react-router';
 import { TOOLS } from '@/src/tools';
@@ -64,7 +63,7 @@ export function ToolPageLayout({
 
   return (
     <Layout>
-      <Seo title={seoTitle} description={seoDescription} canonical={tool.path} />
+      <Seo title={seoTitle} description={seoDescription} canonical={tool.path} faqs={faqs} />
       
       {/* Hero / CTA Section */}
       <section className="bg-gradient-to-br from-[#6366f1] to-[#a855f7] pt-12 pb-32 px-4 relative flex flex-col items-center text-center w-full">
@@ -83,9 +82,6 @@ export function ToolPageLayout({
       {/* Main App Container */}
       <section className="px-4 -mt-20 pb-12 z-20 w-full flex-1">
         <div className="max-w-4xl mx-auto flex gap-6 w-full">
-          {/* Ad Container (Desktop Left)
-          <AdPlaceholder type="vertical" /> */}
-
           <div className="flex-1 min-w-0">
             <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-[0_20px_25px_-5px_rgba(99,102,241,0.1),0_8px_10px_-6px_rgba(99,102,241,0.1)] border border-slate-100 w-full">
               <FileUploader
@@ -124,8 +120,6 @@ export function ToolPageLayout({
               )}
             </div>
 
-            <AdPlaceholder type="horizontal" />
-
             {/* SEO Article & How To Content */}
             <div className="mt-16 w-full prose prose-slate max-w-none">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 border-b border-slate-200 pb-16">
@@ -143,7 +137,7 @@ export function ToolPageLayout({
                   </ol>
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-2">Why PDFSwift?</h2>
+                  <h2 className="text-2xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-2">Why ToolForge?</h2>
                   {seoSections.map((section, idx) => (
                     <div key={idx} className="mb-6">
                       <h3 className="text-lg font-semibold text-slate-800 mb-2">{section.title}</h3>
@@ -167,11 +161,9 @@ export function ToolPageLayout({
               </div>
             </div>
 
-            <AdPlaceholder type="horizontal" />
-
             {/* Internal Links Grid */}
             <div className="mt-20 w-full mb-12">
-              <h2 className="text-2xl font-bold text-slate-900 mb-6 text-center">Discover More Free PDF Tools</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-6 text-center">Discover More Free Tools</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {TOOLS.filter(t => t.id !== toolId).map((t) => {
                   const TIcon = t.icon;

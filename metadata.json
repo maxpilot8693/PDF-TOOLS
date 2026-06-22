@@ -1,6 +1,6 @@
 {
-  "name": "PDF Tools Platform",
-  "description": "A comprehensive suite of PDF tools including merge, split, compress, and convert functionalities.",
+  "name": "ToolForge",
+  "description": "ToolForge - Free Online Tools for Everyone. A comprehensive suite of tools including file conversions and utilities.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

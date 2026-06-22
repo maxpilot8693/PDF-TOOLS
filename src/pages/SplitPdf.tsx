@@ -25,7 +25,7 @@ export function SplitPdf() {
 
   return (
     <ToolPageLayout
-      seoTitle="Split PDF Pages Online Free | PDFSwift"
+      seoTitle="Split PDF Pages Online Free | ToolForge"
       seoDescription="Extract pages from your PDF or split it into multiple separate files for free. Fast, safe, and reliable PDF splitter."
       h1="Split PDF Files Online"
       intro="Separate one page or an entire set for easy conversion into independent PDF files."

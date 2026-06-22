@@ -34,7 +34,7 @@ export function PdfToWord() {
 
   return (
     <ToolPageLayout
-      seoTitle="PDF to Word Converter | Free Online DOCX Converter | PDFSwift"
+      seoTitle="PDF to Word Converter | Free Online DOCX Converter | ToolForge"
       seoDescription="Convert PDF to editable Word document (DOCX) exactly like the original. Fast, free, online PDF to Word converter."
       h1="Convert PDF to Word Document"
       intro="Easily transform any PDF into a native MS Word document, preserving layout, text formatting, and images."

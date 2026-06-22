@@ -25,7 +25,7 @@ export function MergePdf() {
 
   return (
     <ToolPageLayout
-      seoTitle="Merge PDF Online Free | PDFSwift"
+      seoTitle="Merge PDF Online Free | ToolForge"
       seoDescription="Merge multiple PDF files instantly for free. Combine PDFs in the exact order you want. No signup required."
       h1="Merge PDF Files Instantly"
       intro="Select multiple PDF documents and combine them into a single file in seconds."
@@ -65,7 +65,7 @@ export function MergePdf() {
         },
         {
           q: "Can I merge PDFs on my phone?",
-          a: "Absolutely! PDFSwift is fully optimized for mobile devices so you can merge files on the go on iOS or Android."
+          a: "Absolutely! ToolForge is fully optimized for mobile devices so you can merge files on the go on iOS or Android."
         },
         {
           q: "Do I lose any formatting when merging?",

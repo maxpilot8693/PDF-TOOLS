@@ -25,7 +25,7 @@ export function CompressPdf() {
 
   return (
     <ToolPageLayout
-      seoTitle="Compress PDF Online for Free | Reduce File Size | PDFSwift"
+      seoTitle="Compress PDF Online for Free | Reduce File Size | ToolForge"
       seoDescription="Reduce PDF file size without losing quality. Fast, secure, and free online PDF compressor for easy emailing."
       h1="Compress PDF Files Without Losing Quality"
       intro="Optimize your PDF documents to reduce file size while keeping text and images crystal clear."

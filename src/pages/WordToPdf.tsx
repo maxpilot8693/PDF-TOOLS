@@ -35,7 +35,7 @@ export function WordToPdf() {
 
   return (
     <ToolPageLayout
-      seoTitle="Word to PDF Converter | DOC/DOCX to PDF Free | PDFSwift"
+      seoTitle="Word to PDF Converter | DOC/DOCX to PDF Free | ToolForge"
       seoDescription="Convert Word documents to PDF easily. Microsoft Word to PDF online converter."
       h1="Convert Word to PDF Seamlessly"
       intro="Make your DOC and DOCX files universally accessible and un-editable by turning them into secure PDF formats."

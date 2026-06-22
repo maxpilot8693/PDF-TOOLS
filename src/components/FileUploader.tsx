@@ -32,7 +32,7 @@ export function FileUploader({ accept, multiple, onFilesSelected, selectedFiles,
     setIsDragActive(false);
 
     if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-      const files = Array.from(e.dataTransfer.files);
+      const files = Array.from(e.dataTransfer.files) as File[];
       if (!multiple && files.length > 1) {
         onFilesSelected([files[0]]);
       } else {

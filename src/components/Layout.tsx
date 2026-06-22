@@ -11,7 +11,7 @@ export function Layout({ children }: { children: ReactNode }) {
           <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
             <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
           </div>
-          <span className="text-xl font-bold tracking-tight text-slate-900">PDFSwift</span>
+          <span className="text-xl font-bold tracking-tight text-slate-900">ToolForge</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
           <NavLink to="/" className="hover:text-indigo-600">Home</NavLink>
@@ -25,11 +25,6 @@ export function Layout({ children }: { children: ReactNode }) {
               ))}
             </div>
           </div>
-          <a href="#" className="hover:text-indigo-600">Pricing</a>
-          <a href="#" className="hover:text-indigo-600">Business</a>
-          <div className="h-4 w-px bg-slate-300 mx-2"></div>
-          <button className="text-indigo-600">Log in</button>
-          <button className="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">Sign up</button>
         </nav>
       </header>
 
@@ -46,43 +41,32 @@ export function Layout({ children }: { children: ReactNode }) {
               <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
               </div>
-              <span className="text-xl font-bold tracking-tight text-white">PDFSwift</span>
+              <span className="text-xl font-bold tracking-tight text-white">ToolForge</span>
             </div>
             <p className="text-sm text-slate-500 max-w-xs">
-              The fastest, most secure way to manage, merge, split, and convert your PDFs online.
+              Free Online Tools for Everyone. The fastest, most secure way to manage your files online.
             </p>
           </div>
           <div>
-            <h4 className="text-white font-semibold mb-4">Popular Tools</h4>
+            <h4 className="text-white font-semibold mb-4">Platform</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/merge-pdf" className="hover:text-indigo-400 transition-colors">Merge PDF</Link></li>
-              <li><Link to="/split-pdf" className="hover:text-indigo-400 transition-colors">Split PDF</Link></li>
-              <li><Link to="/compress-pdf" className="hover:text-indigo-400 transition-colors">Compress PDF</Link></li>
+              <li><Link to="/" className="hover:text-indigo-400 transition-colors">Home</Link></li>
+              <li><a href="/#tools" className="hover:text-indigo-400 transition-colors">PDF Tools</a></li>
             </ul>
           </div>
-          <div>
-            <h4 className="text-white font-semibold mb-4">Converters</h4>
+          <div className="md:col-span-2">
+            <h4 className="text-white font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/pdf-to-word" className="hover:text-indigo-400 transition-colors">PDF to Word</Link></li>
-              <li><Link to="/word-to-pdf" className="hover:text-indigo-400 transition-colors">Word to PDF</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-white font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-indigo-400 transition-colors">About Us</a></li>
               <li><a href="#" className="hover:text-indigo-400 transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-indigo-400 transition-colors">Terms of Service</a></li>
             </ul>
           </div>
         </div>
         <div className="max-w-6xl mx-auto border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
-          <div>© {new Date().getFullYear()} PDFSwift Technologies Inc. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} ToolForge.</div>
           <div className="flex gap-4 mt-4 md:mt-0 font-bold uppercase tracking-widest">
-            <a href="#" className="hover:text-slate-300 transition-colors">Terms</a>
-            <a href="#" className="hover:text-slate-300 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-slate-300 transition-colors">API</a>
-            <a href="#" className="hover:text-slate-300 transition-colors">Support</a>
+            <a href="#" className="hover:text-slate-300 transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-slate-300 transition-colors">Terms of Service</a>
           </div>
         </div>
       </footer>
