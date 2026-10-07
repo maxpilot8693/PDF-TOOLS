@@ -7,6 +7,7 @@ import { PdfToWord } from '@/src/pages/PdfToWord';
 import { WordToPdf } from '@/src/pages/WordToPdf';
 import { PrivacyPolicy } from '@/src/pages/PrivacyPolicy';
 import { TermsOfUse } from '@/src/pages/TermsOfUse';
+import { NotFound } from '@/src/pages/NotFound';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
       <Route path="/terms" element={<TermsOfUse />} />
       <Route path="/terms-of-use" element={<TermsOfUse />} />
       <Route path="/terms-of-service" element={<TermsOfUse />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
