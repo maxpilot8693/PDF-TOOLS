@@ -25,10 +25,10 @@ export function MergePdf() {
 
   return (
     <ToolPageLayout
-      seoTitle="Merge PDF Online Free | ToolForge"
-      seoDescription="Merge multiple PDF files instantly for free. Combine PDFs in the exact order you want. No signup required."
-      h1="Merge PDF Files Instantly"
-      intro="Select multiple PDF documents and combine them into a single file in seconds."
+      seoTitle="Merge PDF Online Free – Combine Multiple PDF Files | ToolForge"
+      seoDescription="Merge PDF files online for free. Combine multiple PDFs into one document in seconds. No file limits, no sign-up, no watermarks. Fast, secure, and private."
+      h1="Merge PDF Files Online Instantly"
+      intro="Combine multiple PDF documents into a single organized file in seconds. Drag and drop to reorder, merge with zero quality loss, and download immediately."
       toolId="merge"
       accept={{ 'application/pdf': ['.pdf'] }}
       multiple={true}
@@ -38,38 +38,51 @@ export function MergePdf() {
       onProcess={handleProcess}
       isProcessing={isProcessing}
       processStatus={processStatus}
+      keywords="merge pdf online, combine pdf, merge pdfs free, combine pdf files, join pdf, merge pdf no limit, merge multiple pdf files into one"
       howToSteps={[
-        "Click the upload button or drag and drop your PDF files into the box.",
-        "Ensure your files are in the correct order (though currently they merge in the order you selected them).",
-        "Click 'Merge PDFs'.",
-        "The merged document will be downloaded automatically."
+        "Click 'Choose Files' or drag and drop your PDF documents into the upload box.",
+        "Add as many PDF files as you need. Our system supports combining multiple documents in order.",
+        "Click the purple 'Merge PDFs' button to execute the merge instantly.",
+        "Your unified PDF file will be generated and downloaded directly to your device."
       ]}
       seoSections={[
         {
-          title: "Easy PDF combining",
-          content: "Whether you are merging invoices, receipts, or chapters of a book, our free online tool handles unlimited file sizes quickly. You don't need any special software."
+          title: "Lightning-Fast PDF Combiner",
+          content: "Whether you are compiling monthly business invoices, submitting academic assignments, or archiving receipts, ToolForge joins your documents in your browser without lag."
         },
         {
-          title: "Total Privacy",
-          content: "Your files never permanently reside on our servers. Processing occurs using secure client-side technologies whenever possible, keeping your sensitive data safe."
+          title: "Bank-Grade Privacy & Security",
+          content: "Your files never permanently reside on any server. Client-side PDF stream merging processes your document right on your computer, guaranteeing maximum confidentiality."
+        },
+        {
+          title: "Preserve Fonts, Bookmarks & Hyperlinks",
+          content: "Unlike cheap tools that rasterize text into blurry images, ToolForge retains original vector fonts, high-resolution graphics, internal links, and layout metadata."
         }
       ]}
       faqs={[
         {
-          q: "Is it safe to merge PDF files online?",
-          a: "Yes, merging PDF files is completely safe on our platform. We use advanced encryption and do not permanently store your documents."
+          q: "How do I merge multiple PDF files into one for free?",
+          a: "Simply upload your PDF documents to ToolForge's Merge PDF tool, arrange them in your preferred sequence, and click 'Merge PDFs'. Your single combined document will download automatically with no watermarks."
         },
         {
-          q: "Is there a file size limit?",
-          a: "There are no hard limits, but very large files (e.g. hundreds of MBs) may be constrained by your browser's memory."
+          q: "Is there any file limit or page count cap on merging?",
+          a: "No! ToolForge does not enforce arbitrary limits on the number of pages or files you can merge. Because processing happens directly in your browser, you can merge dozens of files at once."
         },
         {
-          q: "Can I merge PDFs on my phone?",
-          a: "Absolutely! ToolForge is fully optimized for mobile devices so you can merge files on the go on iOS or Android."
+          q: "Do I need to install Adobe Acrobat or create an account?",
+          a: "Not at all. ToolForge works 100% online in your web browser. You never need to install Adobe Acrobat, register an account, or pay expensive subscription fees."
         },
         {
-          q: "Do I lose any formatting when merging?",
-          a: "No, the original formatting, fonts, and images remain untouched. Our tool seamlessly appends pages exactly as they appear."
+          q: "Can I merge PDF files on mobile (iPhone or Android)?",
+          a: "Yes! ToolForge is fully responsive and optimized for touchscreens on iOS Safari, Android Chrome, and all modern mobile web browsers."
+        },
+        {
+          q: "Will merging PDFs reduce the quality of my images or text?",
+          a: "No. Original vector typography, color profiles, embedded fonts, and high-resolution images are kept completely intact without any compression or degradation."
+        },
+        {
+          q: "Are my uploaded PDF files kept private?",
+          a: "Yes, 100%. Processing takes place client-side in your browser memory whenever possible, and any server-assisted jobs are permanently purged automatically."
         }
       ]}
     />

@@ -4,6 +4,7 @@ import { Layout } from '@/src/components/Layout';
 import { FileUploader } from '@/src/components/FileUploader';
 import { Link } from 'react-router';
 import { TOOLS } from '@/src/tools';
+import { ShieldCheck, Zap, CheckCircle2, Lock, Sparkles, Star } from 'lucide-react';
 
 export function getToolColorClasses(id: string) {
   switch (id) {
@@ -38,6 +39,7 @@ interface ToolPageLayoutProps {
   faqs: FaqItem[];
   howToSteps: string[];
   seoSections: { title: string; content: ReactNode }[];
+  keywords?: string;
 }
 
 export function ToolPageLayout({
@@ -56,27 +58,70 @@ export function ToolPageLayout({
   processStatus,
   faqs,
   howToSteps,
-  seoSections
+  seoSections,
+  keywords
 }: ToolPageLayoutProps) {
   const tool = TOOLS.find(t => t.id === toolId)!;
   const Icon = tool.icon;
 
+  const breadcrumbs = [
+    { name: "Home", path: "/" },
+    { name: "PDF Tools", path: "/#tools" },
+    { name: tool.name, path: tool.path }
+  ];
+
   return (
     <Layout>
-      <Seo title={seoTitle} description={seoDescription} canonical={tool.path} faqs={faqs} />
+      <Seo 
+        title={seoTitle} 
+        description={seoDescription} 
+        canonical={tool.path} 
+        faqs={faqs}
+        howTo={{ name: `How to ${actionText}`, steps: howToSteps }}
+        breadcrumbs={breadcrumbs}
+        keywords={keywords}
+      />
       
       {/* Hero / CTA Section */}
-      <section className="bg-gradient-to-br from-[#6366f1] to-[#a855f7] pt-12 pb-32 px-4 relative flex flex-col items-center text-center w-full">
+      <section className="bg-gradient-to-br from-[#6366f1] via-[#7c3aed] to-[#a855f7] pt-10 pb-32 px-4 relative flex flex-col items-center text-center w-full">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#fff 2px, transparent 2px)', backgroundSize: '32px 32px' }}></div>
-        <div className="w-16 h-16 bg-white/20 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 backdrop-blur-sm z-10 border border-white/30 shadow-lg">
+        
+        {/* Breadcrumbs for SEO */}
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 mb-4 text-xs font-semibold text-indigo-100 uppercase tracking-wider z-10">
+          <Link to="/" className="hover:text-white transition-colors">Home</Link>
+          <span className="opacity-60">/</span>
+          <span className="opacity-90">PDF Tools</span>
+          <span className="opacity-60">/</span>
+          <span className="text-white font-bold">{tool.name}</span>
+        </nav>
+
+        <div className="w-16 h-16 bg-white/20 text-white rounded-2xl flex items-center justify-center mx-auto mb-5 backdrop-blur-sm z-10 border border-white/30 shadow-lg">
           <Icon className="w-8 h-8" strokeWidth={1.5} />
         </div>
-        <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4 z-10 max-w-4xl mx-auto">
+        
+        <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4 z-10 max-w-4xl mx-auto leading-tight">
           {h1}
         </h1>
-        <p className="text-lg text-indigo-100 mb-6 z-10 max-w-2xl mx-auto font-light leading-relaxed">
+        
+        <p className="text-base sm:text-lg text-indigo-100 mb-6 z-10 max-w-2xl mx-auto font-light leading-relaxed">
           {intro}
         </p>
+
+        {/* Live Trust & SEO signals */}
+        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 z-10 text-xs sm:text-sm text-white/95 font-medium">
+          <span className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-full border border-white/20 backdrop-blur-xs">
+            <ShieldCheck className="w-4 h-4 text-emerald-300" /> 100% Free & Private
+          </span>
+          <span className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-full border border-white/20 backdrop-blur-xs">
+            <Zap className="w-4 h-4 text-amber-300" /> Instant Processing
+          </span>
+          <span className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-full border border-white/20 backdrop-blur-xs">
+            <CheckCircle2 className="w-4 h-4 text-indigo-200" /> No Sign-Up
+          </span>
+          <span className="hidden md:flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-full border border-white/20 backdrop-blur-xs">
+            <Star className="w-4 h-4 text-yellow-300 fill-yellow-300" /> 4.9/5 Rating
+          </span>
+        </div>
       </section>
 
       {/* Main App Container */}
@@ -144,6 +189,28 @@ export function ToolPageLayout({
                       <div className="text-slate-600">{section.content}</div>
                     </div>
                   ))}
+                </div>
+              </div>
+            </div>
+
+            {/* SEO Comparison Card */}
+            <div className="mt-16 bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8">
+              <h2 className="text-2xl font-bold text-slate-900 mb-4 text-center">ToolForge vs Traditional Software</h2>
+              <p className="text-sm text-slate-600 text-center max-w-xl mx-auto mb-6">
+                Why thousands of students, professionals, and businesses choose ToolForge every single day.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                <div className="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+                  <div className="font-bold text-indigo-600 text-base mb-1">100% Free Forever</div>
+                  <p className="text-xs text-slate-500">No trial limits, no hidden subscription fees, and no credit card required.</p>
+                </div>
+                <div className="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+                  <div className="font-bold text-emerald-600 text-base mb-1">Zero Watermarks</div>
+                  <p className="text-xs text-slate-500">Your documents remain clean, professional, and ready for official submission.</p>
+                </div>
+                <div className="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+                  <div className="font-bold text-purple-600 text-base mb-1">Complete Privacy</div>
+                  <p className="text-xs text-slate-500">Automated deletion ensures your files are never retained or indexed.</p>
                 </div>
               </div>
             </div>

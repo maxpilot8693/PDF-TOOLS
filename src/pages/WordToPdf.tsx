@@ -35,10 +35,10 @@ export function WordToPdf() {
 
   return (
     <ToolPageLayout
-      seoTitle="Word to PDF Converter | DOC/DOCX to PDF Free | ToolForge"
-      seoDescription="Convert Word documents to PDF easily. Microsoft Word to PDF online converter."
-      h1="Convert Word to PDF Seamlessly"
-      intro="Make your DOC and DOCX files universally accessible and un-editable by turning them into secure PDF formats."
+      seoTitle="Word to PDF Converter Free – Convert DOCX to PDF Online | ToolForge"
+      seoDescription="Convert Word documents to PDF online for free. Turn DOC and DOCX files into fixed-layout, professional PDF documents. Preserves fonts, tables, and images."
+      h1="Convert Word to PDF Online Free"
+      intro="Transform Microsoft Word documents (.docx, .doc) into universally compatible, secure PDF files with preserved formatting, fonts, and layouts."
       toolId="word-to-pdf"
       accept={{ 
         'application/msword': ['.doc', '.docx'], 
@@ -51,38 +51,47 @@ export function WordToPdf() {
       onProcess={handleProcess}
       isProcessing={isProcessing}
       processStatus={processStatus}
+      keywords="word to pdf, convert word to pdf, docx to pdf, doc to pdf, word to pdf converter online free, convert docx to pdf free, turn word into pdf"
       howToSteps={[
-        "Select your Word document (.doc or .docx) from your device.",
-        "Click the conversion button. We securely transfer your file to our processing engines.",
-        "Sit back while your document is locked into a fixed-layout PDF format.",
-        "Your new PDF downloads directly to your device."
+        "Upload your Word document (.doc or .docx) by dragging it into the box or browsing files.",
+        "Click the purple 'Convert to PDF' button to start cloud rendering.",
+        "Our engine embeds all typography, table structures, and images into a standardized PDF format.",
+        "Your new PDF document will download automatically to your device within seconds."
       ]}
       seoSections={[
         {
-          title: "Preserve layout and typography",
-          content: "Converting Word to PDF ensures that anyone who opens your document will see it exactly the way you formatted it. No missing fonts. No broken margins."
+          title: "Preserve Exact Typography & Margins",
+          content: "Converting Word to PDF locks in your formatting, preventing accidental layout shifts when opening documents on different versions of Word or different operating systems."
         },
         {
-          title: "Fast, Secure, Free",
-          content: "Don't pay for expensive desktop office suites just to export a document. Use our web tool anytime, anywhere."
+          title: "Universal Compatibility",
+          content: "PDFs can be viewed cleanly on any smartphone, tablet, computer, or web browser without requiring Microsoft Word or Office 365 licenses."
+        },
+        {
+          title: "Clickable Hyperlinks & Clean Vectors",
+          content: "All hyperlinks, web URLs, email addresses, and table of contents bookmarks inside your Word document remain fully clickable and active in the generated PDF."
         }
       ]}
       faqs={[
         {
-          q: "Why should I convert my Word document to a PDF?",
-          a: "PDFs look exactly the same on any device and operating system, so there's zero chance of your layout breaking when you send an invoice or resume."
+          q: "How do I convert a Microsoft Word document to a PDF for free?",
+          a: "Upload your .doc or .docx file to ToolForge's Word to PDF tool, click 'Convert to PDF', and your publication-ready PDF document will download in seconds with zero watermarks."
         },
         {
-          q: "Can anyone edit a PDF after I send it?",
-          a: "Standard PDFs are significantly harder to edit by accident, protecting the integrity of business contracts or school essays compared to raw Word documents."
+          q: "Will my layout or fonts shift during conversion?",
+          a: "No! Our converter precisely embeds fonts, preserves line spacing, margins, graphics, and page breaks so your PDF mirrors your Word document faithfully."
         },
         {
-          q: "Does this affect the links inside my document?",
-          a: "No! Active URL links and hyperlinks placed within your original Word document will remain clickable in the final generated PDF."
+          q: "Do I need Microsoft Word installed on my computer?",
+          a: "No. ToolForge performs the entire conversion in the cloud, so you don't need Microsoft Office, Word 365, or any desktop software installed."
         },
         {
-          q: "Do you keep a copy of my Word document?",
-          a: "Never. All documents are stored in temporary processing storage and purged completely from the cloud servers shortly after conversion."
+          q: "Can I convert Word documents on an iPhone or Android phone?",
+          a: "Yes! ToolForge runs in any mobile web browser, allowing you to convert Word attachments directly from your phone."
+        },
+        {
+          q: "Are my files kept private and deleted after conversion?",
+          a: "Yes, absolutely. Uploaded files are encrypted in transit and purged automatically from our processing servers immediately following conversion."
         }
       ]}
     />

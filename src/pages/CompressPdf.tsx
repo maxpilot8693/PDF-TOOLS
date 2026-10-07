@@ -25,10 +25,10 @@ export function CompressPdf() {
 
   return (
     <ToolPageLayout
-      seoTitle="Compress PDF Online for Free | Reduce File Size | ToolForge"
-      seoDescription="Reduce PDF file size without losing quality. Fast, secure, and free online PDF compressor for easy emailing."
-      h1="Compress PDF Files Without Losing Quality"
-      intro="Optimize your PDF documents to reduce file size while keeping text and images crystal clear."
+      seoTitle="Compress PDF Online Free – Reduce PDF File Size | ToolForge"
+      seoDescription="Compress PDF files online for free. Reduce PDF file size for email, web uploads, and storage without losing quality. No watermarks, no registration."
+      h1="Compress PDF Files Online Free"
+      intro="Shrink your PDF documents down to manageable sizes for easy email attachments and web submissions while maintaining sharp typography and graphics."
       toolId="compress"
       accept={{ 'application/pdf': ['.pdf'] }}
       multiple={false}
@@ -38,38 +38,47 @@ export function CompressPdf() {
       onProcess={handleProcess}
       isProcessing={isProcessing}
       processStatus={processStatus}
+      keywords="compress pdf, reduce pdf size, shrink pdf, compress pdf online free, reduce pdf size below 100kb, compress pdf for email, pdf size reducer"
       howToSteps={[
-        "Upload the large PDF file you wish to compress.",
-        "Click 'Compress PDF' to start the optimization engine.",
-        "Wait a few seconds while excess metadata and uncompressed streams are optimized.",
-        "Download your compressed, smaller PDF file."
+        "Upload the PDF document you need to optimize from your computer, phone, or tablet.",
+        "Click the purple 'Compress PDF' button to initiate structural compression.",
+        "Our engine cleans redundant metadata, reorganizes PDF object trees, and compresses stream data.",
+        "Download your compressed, smaller PDF document immediately with zero watermarks."
       ]}
       seoSections={[
         {
-          title: "Optimize for email",
-          content: "Email clients often bounce attachments over 25MB. By using our PDF compressor, you ensure your important documents are delivered smoothly without losing visual fidelity."
+          title: "Bypass Email Attachment Limits",
+          content: "Email providers like Gmail and Outlook block attachments over 20MB–25MB. ToolForge compresses bloated PDFs so they transmit smoothly without delivery errors."
         },
         {
-          title: "Browser-based compression",
-          content: "Our system optimizes the internal structure of your PDF—removing unused objects and regenerating object streams—resulting in smaller sizes without a noticeable drop in quality."
+          title: "Preserve Document Clarity",
+          content: "Our smart optimization targets wasteful embedded data and structural redundancies so your contracts, diagrams, and invoices stay crisp and legible."
+        },
+        {
+          title: "No Sign-Up or Software Needed",
+          content: "Forget about purchasing costly desktop software. ToolForge works entirely in your browser on Mac, Windows, Chromebook, iPhone, and Android."
         }
       ]}
       faqs={[
         {
-          q: "Will compression reduce the quality of my images?",
-          a: "The basic compression engine optimizes internal PDF structures. While some heavy image downsampling isn't currently applied in the free tier, standard files usually see a good reduction footprint with zero visual quality loss."
+          q: "How can I reduce PDF file size for free without losing quality?",
+          a: "Upload your document to ToolForge's Compress PDF tool and click 'Compress PDF'. Our intelligent engine removes unused object trees and stream overhead to shrink the file size while keeping fonts and images crisp."
         },
         {
-          q: "Can I compress multiple files at once?",
-          a: "Currently, the compression tool processes one document at a time to ensure maximum stability and optimization focus."
+          q: "Can I compress a PDF to under 200KB or 100KB?",
+          a: "Yes! Depending on the original file contents and image density, our optimization will strip unnecessary overhead to bring the file down to upload thresholds required by job boards, government portals, and school forms."
         },
         {
-          q: "Why didn't my file shrink much?",
-          a: "If a PDF is already heavily compressed, or consists entirely of high-resolution JPEGs that cannot be easily scaled down, the savings might be minimal."
+          q: "Does compression add any watermarks to my document?",
+          a: "Never. ToolForge adds zero watermarks, brand logos, or visual modifications to your documents. Your output is 100% clean and ready for professional use."
         },
         {
-          q: "What happens to my uploaded file?",
-          a: "If uploaded securely via our backend processors, it is purged after an hour. If processed directly in your browser, it never leaves your machine."
+          q: "Is it safe to compress private bank statements or resumes?",
+          a: "Yes. ToolForge uses encrypted connections and automatically purges processed files immediately. We do not store, view, or sell your document content."
+        },
+        {
+          q: "Can I compress PDF documents on my phone?",
+          a: "Yes, our web tool is fully optimized for mobile devices on iOS Safari and Android Chrome."
         }
       ]}
     />

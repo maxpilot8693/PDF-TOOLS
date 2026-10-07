@@ -5,6 +5,8 @@ import { SplitPdf } from '@/src/pages/SplitPdf';
 import { CompressPdf } from '@/src/pages/CompressPdf';
 import { PdfToWord } from '@/src/pages/PdfToWord';
 import { WordToPdf } from '@/src/pages/WordToPdf';
+import { PrivacyPolicy } from '@/src/pages/PrivacyPolicy';
+import { TermsOfUse } from '@/src/pages/TermsOfUse';
 
 export default function App() {
   return (
@@ -15,6 +17,11 @@ export default function App() {
       <Route path="/compress-pdf" element={<CompressPdf />} />
       <Route path="/pdf-to-word" element={<PdfToWord />} />
       <Route path="/word-to-pdf" element={<WordToPdf />} />
+      <Route path="/privacy" element={<PrivacyPolicy />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms" element={<TermsOfUse />} />
+      <Route path="/terms-of-use" element={<TermsOfUse />} />
+      <Route path="/terms-of-service" element={<TermsOfUse />} />
     </Routes>
   );
 }

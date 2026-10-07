@@ -1,6 +1,6 @@
 {
   "name": "ToolForge",
-  "description": "ToolForge - Free Online Tools for Everyone. A comprehensive suite of tools including file conversions and utilities.",
+  "description": "ToolForge is a suite of free online PDF and file conversion tools. Merge, split, compress, convert PDF to Word, and Word to PDF instantly without registration.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
